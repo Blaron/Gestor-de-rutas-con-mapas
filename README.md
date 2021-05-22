@@ -42,6 +42,7 @@ Para el proyecto se han utilizado los siguientes recursos
 | Leaflet | https://leafletjs.com |
 | MapBox | http://mapbox.com |
 | Nominatim | https://nominatim.openstreetmap.org/ |
+| Tailwind | https://tailwindcss.com |
 
 
 ## License
