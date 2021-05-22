@@ -44,7 +44,6 @@ function init() {
                 usuarios.addEventListener("click",()=>{
             controlador.innerHTML = `<iframe class="w-full h-full rounded-md" src="./adminUsuarios.php"></iframe>`;
         });
-        //controlador.innerHTML = `<iframe class="w-full h-full rounded-md" src="./adminCentro.php"></iframe>`;
-       // controlador.innerHTML = `<iframe class="w-full h-full rounded-md" src="./adminUsuarios.php"></iframe>`;
+        
     });
 }
