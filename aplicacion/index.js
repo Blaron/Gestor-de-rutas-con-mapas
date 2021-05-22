@@ -4,12 +4,6 @@ L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors',
 }).addTo(map);
 
-
-
-
-
-
-// Poner los puntos.
 cogerPuntos();
 async function cogerPuntos() {
     let sCalle;
@@ -28,7 +22,7 @@ async function cogerPuntos() {
                 let response = await fetch(`https://nominatim.openstreetmap.org/search.php?q=${sCalle}%2C+alcalá+de+guadaira%2C41500&format=jsonv2`);
 
                 if (response.ok) { // if HTTP-status is 200-299
-                    // get the response body (the method explained below)
+                    
                     let json = await response.json();
                     if (json == 0) {
                         alert("Calle incorrecta o no encontrada");
@@ -52,11 +46,6 @@ async function cogerPuntos() {
 
 }
 
-
-// fin puntos
-
-
-
 const control = L.Routing.control(L.extend(window.lrmConfig, {
     // Ponemos en español la busqueda
     language: 'es',
@@ -67,8 +56,7 @@ const control = L.Routing.control(L.extend(window.lrmConfig, {
         L.latLng(37.34874394267787, -5.843562254121813),
         L.latLng(37.34874394267787, -5.843562254121813)
     ],
-    // Añadimos la api, con el idioma en español.
-    router: L.Routing.mapbox('pk.eyJ1IjoiYmxhcm9uIiwiYSI6ImNrb3VlODR4bzBrYjgyb29hbnJ1bDJtMTEifQ.5jZ_4XfNeBsml-IN-aNWxA', {language: 'es'}),
+    router: L.Routing.mapbox('API KEY', {language: 'es'}),
     geocoder: L.Control.Geocoder.nominatim(),
     routeWhileDragging: true,
     reverseWaypoints: true,
