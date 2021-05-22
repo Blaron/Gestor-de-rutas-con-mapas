@@ -1,6 +1,6 @@
 <?php
 
-if (isset($_POST['enviarUsuario'])) { // nos llega el usuario y lo editamos
+if (isset($_POST['enviarUsuario'])) { 
     $usuario = $_POST['nombre'];
     $apellido = $_POST['apellidos'];
     $telefono = $_POST['telefono'];
