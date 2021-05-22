@@ -20,7 +20,7 @@ if (isset($_POST['enviarUsuario'])) { // nos llega el usuario y lo editamos
     }
 }
 
-if (isset($_POST['enviarCentro'])) { // nos llega el centro y lo editamos
+if (isset($_POST['enviarCentro'])) { 
     $nombre = $_POST['nombre'];
     $direccion = $_POST['direccion'];
     $ciudad = $_POST['ciudad'];
@@ -292,7 +292,7 @@ function conexionDB($tipo) {
     }
 }
 
-if (isset($_POST['addUsuario'])) { // nos llega el usuario y lo añadimos
+if (isset($_POST['addUsuario'])) { 
     $usuario = $_POST['nombre'];
     $apellido = $_POST['apellidos'];
     $telefono = $_POST['telefono'];
@@ -313,7 +313,7 @@ if (isset($_POST['addUsuario'])) { // nos llega el usuario y lo añadimos
 }
 
 
-if (isset($_POST['delUsuario'])) { // nos llega el usuario y lo borramos
+if (isset($_POST['delUsuario'])) { 
 
     $id = $_POST['id'];
     $query = "DELETE FROM `usuarios` WHERE `usuarios`.`id` = $id";
@@ -329,7 +329,7 @@ if (isset($_POST['delUsuario'])) { // nos llega el usuario y lo borramos
 }
 
 
-if (isset($_POST['addCentro'])) { // nos llega el centro y lo editamos
+if (isset($_POST['addCentro'])) { 
     $nombre = $_POST['nombre'];
     $direccion = $_POST['direccion'];
     $ciudad = $_POST['ciudad'];
@@ -347,7 +347,7 @@ if (isset($_POST['addCentro'])) { // nos llega el centro y lo editamos
     }
 }
 
-if (isset($_POST['visita'])) { // nos llega el centro y lo editamos
+if (isset($_POST['visita'])) { 
     $visita = $_POST['visita'];
     $id = $_POST['id'];
     $query = "UPDATE `usuarios` SET `visita` = '$visita' WHERE `usuarios`.`id` = $id";
