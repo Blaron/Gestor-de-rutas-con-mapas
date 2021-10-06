@@ -12,12 +12,9 @@ En el ejemplo, se utiliza una simulación de un centro de día.
 
 ## Comentarios
 
-> Conozco que hay algunos bugs
-> Tengo en conocimiento que la dirección primaria esta creada a mano
+> · Conozco que hay algunos bugs.
+> · Tengo en conocimiento que la dirección primaria esta creada a mano.
 
-This text you see here is *actually- written in Markdown! To get a feel
-for Markdown's syntax, type some text into the left window and
-watch the results in the right.
 
 ## Installation
  Requiere [Php](https://php.net/) v7+
